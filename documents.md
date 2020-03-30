@@ -29,14 +29,16 @@ Tous les formats disponibles sur https://www.php.net/manual/fr/function.strftime
 
 `var` = `[1, 2, 3]`
 
-| Source                            | Affichage |
-| ----------------------------------|----------------|
-| `{{ var \| join(", ") }}`          | `1, 2, 3`     | 
-| `{{ var \| join(" ; ") }}`          | `1 ; 2 ; 3`     | 
-| `{{ var \| join("\n") \| nl2br }}`  | <pre>1
+<table>
+<tr><th> Source </th><th> Affichage </th></tr>
+<tr><td>`{{ var \| join(", ") }}`         </td><td>`1, 2, 3`    </td></tr> 
+<tr><td>`{{ var \| join(" ; ") }}`        </td><td>`1 ; 2 ; 3`    </td></tr> 
+<tr><td>`{{ var \| join("\n") \| nl2br }}`</td><td>```1
 2
-3<pre> | 
-
+3
+```
+</td></tr>
+</table>
 
 ## Nombre
 
