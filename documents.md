@@ -31,13 +31,9 @@ Tous les formats disponibles sur https://www.php.net/manual/fr/function.strftime
 
 <table>
 <tr><th> Source </th><th> Affichage </th></tr>
-<tr><td><code>{{ var | join(", ") }}</code>         </td><td>`1, 2, 3`    </td></tr> 
-<tr><td><code>{{ var | join(" ; ") }}</code>   </td><td>`1 ; 2 ; 3`    </td></tr> 
-<tr><td><code>{{ var | join("\n") \| nl2br }}</code></td><td><code>1
-2
-3
-</code>
-</td></tr>
+<tr><td><code>{{ var | join(", ") }}</code>         </td><td><code>1, 2, 3</code>    </td></tr> 
+<tr><td><code>{{ var | join(" ; ") }}</code>   </td><td><code>1 ; 2 ; 3</code>    </td></tr> 
+<tr><td><code>{{ var | join("\n") \| nl2br }}</code></td><td><code>1<br>2<br>3</code></td></tr>
 </table>
 
 ## Nombre
