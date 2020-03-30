@@ -33,7 +33,7 @@ Tous les formats disponibles sur https://www.php.net/manual/fr/function.strftime
 | ----------------------------------|----------------|
 | `{{ var \| join(", ") }}`          | `1, 2, 3`     | 
 | `{{ var \| join(" ; ") }}`          | `1 ; 2 ; 3`     | 
-| `{{ var \| join("\n") | nl2br }}`  | `1` | 
+| `{{ var \| join("\n") \| nl2br }}`  | `1` | 
 |                                   | `2` | 
 |                                   | `3` | 
 
