@@ -31,12 +31,12 @@ Tous les formats disponibles sur https://www.php.net/manual/fr/function.strftime
 
 <table>
 <tr><th> Source </th><th> Affichage </th></tr>
-<tr><td>`{{ var \| join(", ") }}`         </td><td>`1, 2, 3`    </td></tr> 
-<tr><td>`{{ var \| join(" ; ") }}`        </td><td>`1 ; 2 ; 3`    </td></tr> 
-<tr><td>`{{ var \| join("\n") \| nl2br }}`</td><td>```1
+<tr><td><code>{{ var | join(", ") }}</code>         </td><td>`1, 2, 3`    </td></tr> 
+<tr><td><code>{{ var | join(" ; ") }}</code>   </td><td>`1 ; 2 ; 3`    </td></tr> 
+<tr><td><code>{{ var | join("\n") \| nl2br }}</code></td><td><code>1
 2
 3
-```
+</code>
 </td></tr>
 </table>
 
