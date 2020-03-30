@@ -18,10 +18,10 @@
 
 | Source                            | Affichage |
 | ----------------------------------|----------------|
-| `{{ var | date() }}`              | `2020-03-30` |
-| `{{ var | date("%d/%m/%Y") }}`    | `30/03/2020` |
-| `{{ var | date("%A %e %B %Y") }}` | `Lundi 30 mars 2020` |
-| `{{ var | date("%e %b %y") }}`    | `30 mar 20` |
+| `{{ var \| date() }}`              | `2020-03-30` |
+| `{{ var \| date("%d/%m/%Y") }}`    | `30/03/2020` |
+| `{{ var \| date("%A %e %B %Y") }}` | `Lundi 30 mars 2020` |
+| `{{ var \| date("%e %b %y") }}`    | `30 mar 20` |
 
 Tous les formats disponibles sur https://www.php.net/manual/fr/function.strftime.php
 
@@ -31,9 +31,11 @@ Tous les formats disponibles sur https://www.php.net/manual/fr/function.strftime
 
 | Source                            | Affichage |
 | ----------------------------------|----------------|
-| `{{ var | join(", ") }}`          | `1, 2, 3`     | 
-| `{{ var | join(" ; ") }}`          | `1 ; 2 ; 3`     | 
-| `{{ var | join("\n") | nl2br }}`  | `1 2 3` sur 3 lignes | 
+| `{{ var \| join(", ") }}`          | `1, 2, 3`     | 
+| `{{ var \| join(" ; ") }}`          | `1 ; 2 ; 3`     | 
+| `{{ var \| join("\n") | nl2br }}`  | `1` | 
+|                                   | `2` | 
+|                                   | `3` | 
 
 ## Nombre
 
@@ -41,16 +43,16 @@ Tous les formats disponibles sur https://www.php.net/manual/fr/function.strftime
 
 | Source                            | Affichage |
 | ----------------------------------|----------------|
-| `{{ var | number("full") }}` | `cent vingt-trois mille quatre cent cinquante-six virgule sept huit neuf` | 
-| `{{ var | number(0) }}`      | `123 457` | 
-| `{{ var | number(1) }}`      | `123 456,8` | 
-| `{{ var | number(2) }}`      | `123 456,79` | 
-| `{{ var | number(3) }}`      | `123 456,789` | 
-| `{{ var | number(4) }}`      | `123 456,7890` | 
-| `{{ var | number(5) }}`      | `123 456,78900` | 
-| `{{ var | number(0, "€") }}`      | `123 457 €` | 
-| `{{ var | number(2, "m²") }}`      | `123 456,79 m²` | 
-| `{{ var | number(3, "%") }}`      | `123 456,789 %` | 
+| `{{ var \| number("full") }}` | `cent vingt-trois mille quatre cent cinquante-six virgule sept huit neuf` | 
+| `{{ var \| number(0) }}`      | `123 457` | 
+| `{{ var \| number(1) }}`      | `123 456,8` | 
+| `{{ var \| number(2) }}`      | `123 456,79` | 
+| `{{ var \| number(3) }}`      | `123 456,789` | 
+| `{{ var \| number(4) }}`      | `123 456,7890` | 
+| `{{ var \| number(5) }}`      | `123 456,78900` | 
+| `{{ var \| number(0, "€") }}`      | `123 457 €` | 
+| `{{ var \| number(2, "m²") }}`      | `123 456,79 m²` | 
+| `{{ var \| number(3, "%") }}`      | `123 456,789 %` | 
 
 ## Condition
 
