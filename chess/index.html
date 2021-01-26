@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess</title>
+    <link href="chess.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script src="https://kit.fontawesome.com/d03234fe69.js" crossorigin="anonymous"></script>
+
+
+<div class="plateau">
+
+    <div class="side"></div>
+    <div class="side">A</div>
+    <div class="side">B</div>
+    <div class="side">C</div>
+    <div class="side">D</div>
+    <div class="side">E</div>
+    <div class="side">F</div>
+    <div class="side">G</div>
+    <div class="side">H</div>
+    <div class="side"></div>
+
+
+    <div class="side">1</div>
+    <div class="cell white" id="A1"><div class="piece noir"><span class="fas fa-chess-rook"></span></div></div>
+    <div class="cell black" id="B1"><div class="piece noir"><span class="fas fa-chess-knight"></span></div></div>
+    <div class="cell white" id="C1"><div class="piece noir"><span class="fas fa-chess-bishop"></span></div></div>
+    <div class="cell black" id="D1"><div class="piece noir"><span class="fas fa-chess-queen"></span></div></div>
+    <div class="cell white" id="E1"><div class="piece noir"><span class="fas fa-chess-king"></span></div></div>
+    <div class="cell black" id="F1"><div class="piece noir"><span class="fas fa-chess-bishop"></span></div></div>
+    <div class="cell white" id="G1"><div class="piece noir"><span class="fas fa-chess-knight"></span></div></div>
+    <div class="cell black" id="H1"><div class="piece noir"><span class="fas fa-chess-rook"></span></div></div>
+    <div class="side">1</div>
+
+    <div class="side">2</div>
+    <div class="cell black" id="A2"><div class="piece noir"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell white" id="B2"><div class="piece noir"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell black" id="C2"><div class="piece noir"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell white" id="D2"><div class="piece noir"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell black" id="E2"><div class="piece noir"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell white" id="F2"><div class="piece noir"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell black" id="G2"><div class="piece noir"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell white" id="H2"><div class="piece noir"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="side">2</div>
+
+    <div class="side">3</div>
+    <div class="cell white" id="A3"></div>
+    <div class="cell black" id="B3"></div>
+    <div class="cell white" id="C3"></div>
+    <div class="cell black selected" id="D3"></div>
+    <div class="cell white" id="E3"></div>
+    <div class="cell black" id="F3"></div>
+    <div class="cell white" id="G3"></div>
+    <div class="cell black" id="H3"></div>
+    <div class="side">3</div>
+
+    <div class="side">4</div>
+    <div class="cell black" id="A4"></div>
+    <div class="cell white" id="B4"></div>
+    <div class="cell black" id="C4"></div>
+    <div class="cell white" id="D4"></div>
+    <div class="cell black" id="E4"></div>
+    <div class="cell white" id="F4"></div>
+    <div class="cell black" id="G4"></div>
+    <div class="cell white" id="H4"></div>
+    <div class="side">4</div>
+
+    <div class="side">5</div>
+    <div class="cell white" id="A5"></div>
+    <div class="cell black" id="B5"></div>
+    <div class="cell white" id="C5"></div>
+    <div class="cell black" id="D5"></div>
+    <div class="cell white selected" id="E5"></div>
+    <div class="cell black" id="F5"></div>
+    <div class="cell white" id="G5"></div>
+    <div class="cell black" id="H5"></div>
+    <div class="side">5</div>
+
+    <div class="side">6</div>
+    <div class="cell black" id="A6"></div>
+    <div class="cell white" id="B6"></div>
+    <div class="cell black" id="C6"></div>
+    <div class="cell white" id="D6"></div>
+    <div class="cell black" id="E6"></div>
+    <div class="cell white" id="F6"></div>
+    <div class="cell black" id="G6"></div>
+    <div class="cell white" id="H6"></div>
+    <div class="side">6</div>
+
+    <div class="side">7</div>
+    <div class="cell white" id="A7"><div class="piece blanc"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell black" id="B7"><div class="piece blanc"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell white" id="C7"><div class="piece blanc"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell black" id="D7"><div class="piece blanc"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell white" id="E7"><div class="piece blanc"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell black" id="F7"><div class="piece blanc"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell white" id="G7"><div class="piece blanc"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="cell black" id="H7"><div class="piece blanc"><span class="fas fa-chess-pawn"></span></div></div>
+    <div class="side">7</div>
+
+    <div class="side">8</div>
+    <div class="cell black" id="A8"><div class="piece blanc"><span class="fas fa-chess-rook"></span></div></div>
+    <div class="cell white" id="B8"><div class="piece blanc"><span class="fas fa-chess-knight"></span></div></div>
+    <div class="cell black" id="C8"><div class="piece blanc"><span class="fas fa-chess-bishop"></span></div></div>
+    <div class="cell white" id="D8"><div class="piece blanc"><span class="fas fa-chess-king"></span></div></div>
+    <div class="cell black" id="E8"><div class="piece blanc"><span class="fas fa-chess-queen"></span></div></div>
+    <div class="cell white" id="F8"><div class="piece blanc"><span class="fas fa-chess-bishop"></span></div></div>
+    <div class="cell black" id="G8"><div class="piece blanc"><span class="fas fa-chess-knight"></span></div></div>
+    <div class="cell white" id="H8"><div class="piece blanc"><span class="fas fa-chess-rook"></span></div></div>
+    <div class="side">8</div>
+
+    <div class="side"></div>
+    <div class="side">A</div>
+    <div class="side">B</div>
+    <div class="side">C</div>
+    <div class="side">D</div>
+    <div class="side">E</div>
+    <div class="side">F</div>
+    <div class="side">G</div>
+    <div class="side">H</div>
+    <div class="side"></div>
+
+</div>
+
+<!-- End your code here -->
+</body>
+</html>
